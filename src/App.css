@@ -1,38 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;300;400;500;600;700;800&display=swap");
+
+:root {
+	--color-white: #fff;
+	--color-white-bg: rgb(235, 235, 235);
+	--color-navy: rgb(52, 82, 253);
+}
+
+/* CSS RESET */
+html {
+	font-size: 62.5%;
+	font-family: "League Spartan", sans-serif;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+}
+
+*:focus {
+	outline: none;
+}
+
 .App {
-  text-align: center;
-}
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("./assets/city.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	height: 100vh;
 }
